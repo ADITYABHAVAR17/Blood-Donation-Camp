@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Donation Camp</title>
+    <!-- <link rel="stylesheet" href="styles.css">
+      -->
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Blood Donation Camp</h1>
+            <p>Your donation can save lives!</p>
+            <a href="#donate" class="donate-btn">Donate Now</a>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#events" class="nav-link">Upcoming Events</a></li>
+            <li><a href="#register" class="nav-link">Register</a></li>
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About the Camp</h2>
+        <p>We organize blood donation camps to help save lives by providing necessary blood to those in need. Our goal is to make blood donation easy, safe, and accessible to all.</p>
+        <p>Join us in our mission to save lives, one drop at a time.</p>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section id="events" class="events-section">
+        <h2>Upcoming Events</h2>
+        <div class="event-list">
+            <div class="event">
+                <h3>Blood Donation Drive at City Center</h3>
+                <p>Date: 20th October 2024</p>
+                <p>Time: 10:00 AM - 4:00 PM</p>
+            </div>
+            <div class="event">
+                <h3>Community Blood Donation</h3>
+                <p>Date: 25th October 2024</p>
+                <p>Time: 9:00 AM - 3:00 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="register-section">
+        <h2>Register as a Donor</h2>
+        <form id="donorForm">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <select name="blood-group" required>
+                <option value="" disabled selected>Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+            <button type="submit">Register Now</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or want to learn more about our blood donation camps, feel free to get in touch.</p>
+        <p>Email: info@bloodcamp.com | Phone: +123 456 7890</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Blood Donation Camp. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

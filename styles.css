@@ -1,0 +1,14 @@
+.head{
+    background-color: rgb(123, 190, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+    color: rgb(255, 255, 255);
+}
+.absolute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
