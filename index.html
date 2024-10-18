@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/main.css">
+  
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="head">
+        <h1>
+            Blood Donation Camp
+        </h1>
+    </div>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home1" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Add Person</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-searchperson-tab" data-bs-toggle="pill" data-bs-target="#pills-searchperson"
+                type="button" role="tab" aria-controls="pills-searchperson" aria-selected="false">Search Person</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-newdonation-tab" data-bs-toggle="pill" data-bs-target="#pills-newdonation"
+                type="button" role="tab" aria-controls="pills-newdonation" aria-selected="false">New Donation</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-newreceive-tab" data-bs-toggle="pill" data-bs-target="#pills-newreceive"
+                type="button" role="tab" aria-controls="pills-newreceive" aria-selected="false">New Receive</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-checkstock-tab" data-bs-toggle="pill" data-bs-target="#pills-checkstock"
+                type="button" role="tab" aria-controls="pills-checkstock" aria-selected="false">Check Stock</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-donationhistory-tab" data-bs-toggle="pill" data-bs-target="#pills-donationhistory"
+                type="button" role="tab" aria-controls="pills-donationhistory" aria-selected="false">Donation History</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-receivinghistory-tab" data-bs-toggle="pill" data-bs-target="#pills-receivinghistory"
+                type="button" role="tab" aria-controls="pills-receivinghistory" aria-selected="false">Receiving History</button>
+        </li>
+        <!-- <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-adduser-tab" data-bs-toggle="pill" data-bs-target="#pills-adduser"
+                type="button" role="tab" aria-controls="pills-adduser" aria-selected="false">Add User</button>
+        </li> -->
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab">
+            <header class="landing-page ">
+                <div class="img relative" id="logo">
+                    <img width="1040px" height="600px" src="assets/image.jpg" alt="">
+                </div>
+            </header>
+            <div class="absolute">
+                <h1>Blood Donation Camp</h1>
+                <p>Your donation can save lives!</p>
+                <a href="#contact" class="donate-btn">Get Involved</a>
+            </div>
+        
+            <!-- Contact Us Section -->
+            <section id="contact" class="contact-section">
+                <h2>Contact Us</h2>
+                <p>Have any questions? Want to know more about how you can contribute? Reach out to us!</p>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> info@bloodcamp.com</p>
+                    <p><strong>Phone:</strong> +123 456 7890</p>
+                    <p><strong>Address:</strong> 123 Blood Drive, City Center, Country</p>
+                </div>
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        
+            <!-- Footer Section -->
+            <footer>
+                <p>&copy; 2024 Blood Donation Camp. All rights reserved.</p>
+                <p>Follow us on:
+                    <a href="#">Facebook</a> | 
+                    <a href="#">Twitter</a> | 
+                    <a href="#">Instagram</a>
+                </p>
+            </footer>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <form id="donorForm">
+                <input type="text" id="name" placeholder="Name" required class="input">
+                <input type="number" name="number" id="number" placeholder="Mobile Number" class="input"><br>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male" class="input"/>
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" class="input" />
+                        Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other" class="input"/>
+                        Other
+                    </label>
+                </div>
+
+                <label>Date of birth:</label>
+                <input type="date" name="" id="bdate" class="input">
+
+                <label for="blood_group">Blood Group:</label>
+                <select name="blood_group" id="blood_options" class="select">
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+
+                <input type="text" id="address" placeholder="Address" required class="input">
+                <input type="text" id="medical_issues" placeholder="Medical Issues" required class="input">
+                <button type="submit" id="submit" class="button">Submit</button>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="pills-searchperson" role="tabpanel" aria-labelledby="pills-searchperson-tab">
+            Search Person Content
+        </div>
+        <div class="tab-pane fade" id="pills-newdonation" role="tabpanel" aria-labelledby="pills-newdonation-tab">
+            New Donation Content
+            <form name="newDonation" action = "newDonation.php"  method = "POST">
+                <h2>New Donation</h2>
+                <br>
+            
+                <p>  
+                <label>Personal Id:</label>  
+                <br>
+                <input type = "Number" name  = "pid" class="input" required/>  
+                </p>  
+            
+                <p>  
+                <label>Units of blood donated:</label>  
+                <br>
+                <input type = "Number" maxlength="1" name  = "units" class="input" required/>  
+                </p>  
+            
+                <p>
+                <button class="btn">Submit</button>
+                </p>
+                </form>
+        </div>
+        <div class="tab-pane fade" id="pills-newreceive" role="tabpanel" aria-labelledby="pills-newreceive-tab">
+            New Receive Content
+            <form name="addPerson" action = "newReceive.php"  method = "POST">
+                <h2>New Receive</h2>
+                <br>
+            
+                <p>  
+                <label>Personal Id:</label>  
+                <br>
+                <input type = "Number" name  = "pid" class="input" required/>  
+                </p>  
+            
+                <p>  
+                <label>Units of blood Received:</label>  
+                <br>
+                <input type = "Number" maxlength="1" name  = "units" class="input" required/>  
+                </p>  
+            
+                <p>  
+                <label>Admitted Hospital:</label>  
+                <br>
+                <input type = "text" name  = "hospital" class="input" required/>  
+                </p>  
+            
+                <p>
+                <button class="btn">Submit</button>
+                </p>
+            
+            
+            
+                </form>
+        </div>
+        <div class="tab-pane fade" id="pills-checkstock" role="tabpanel" aria-labelledby="pills-checkstock-tab">
+            Check Stock Content
+        </div>
+        <div class="tab-pane fade" id="pills-donationhistory" role="tabpanel" aria-labelledby="pills-donationhistory-tab">
+            Donation History Content
+        </div>
+        <div class="tab-pane fade" id="pills-receivinghistory" role="tabpanel" aria-labelledby="pills-receivinghistory-tab">
+            Receiving History Content
+        </div>
+        <div class="tab-pane fade" id="pills-adduser" role="tabpanel" aria-labelledby="pills-adduser-tab">
+            Add User Content
+            <form name="addUser" action = "addUser.php"  method = "POST">
+                <h2>Add User</h2>
+                <br>
+              
+                <p>  
+                <label>Super Admin Password: </label>  
+                <br>
+                <input type = "password" name  = "super_pwd" class="input" required/>  
+                </p>  
+                <p>  
+                <label>Username: </label>  
+                <br>
+                <input type = "text" name  = "usr_name" class="input" required/>  
+                </p>  
+                <p>  
+                <label>Password: </label>  
+                <br>
+                <input type = "password" name  = "usr_pwd" class="input" required/>  
+                </p>  
+                <p>  
+                <label>Confirm Password: </label>  
+                <br>
+                <input type = "password" name  = "usr_cnfrm_pwd" class="input" required/>  
+                </p>  
+              
+                <p>
+                <button class="btn">Create User</button>
+                </p>
+                </form>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
